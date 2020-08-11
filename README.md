@@ -21,5 +21,5 @@ body {
 }
 `
 
-minifier.fromString(test, "text/css")
+minifier.fromString(test, "text/css") => `html{width:100%;height:100vh;font-family:monospace}body{margin:0}`
 ```
