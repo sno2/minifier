@@ -48,9 +48,9 @@ The asynchronous `file` method also takes in two required string parameters with
 
 ### Supported Mime Types
 
-- `text/css`
-
 - `text/html`
+
+- `text/css`
 
 - `application/json`
 
