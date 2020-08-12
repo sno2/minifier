@@ -31,7 +31,7 @@ Before importing, [download and install Deno](https://deno.land/#installation).
 You can then import Minifier straight into your project:
 
 ```ts
-import { Minifier } from "https://raw.githubusercontent.com/CodingCarter/minifier/master/mod.ts"
+import { Minifier } from "https://denopkg.com/CodingCarter/minifier@v0.2/mod.ts"
 ```
 
 ## Docs
