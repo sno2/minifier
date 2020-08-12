@@ -1,4 +1,4 @@
-import { Minifier } from "./mod.ts"
+import { Minifier } from "https://raw.githubusercontent.com/CodingCarter/minifier/master/mod.ts"
 
 const minifier = new Minifier()
 
