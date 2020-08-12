@@ -38,13 +38,15 @@ import { Minifier } from "https://deno.land/x/minifier/mod.ts"
 
 The `Minifier` class contains everything that there is that is needed with this module. Here is a list of the methods and how to use them:
 
-#### `.string(str: string, mimeType: string): string`
+#### `.string(str: string, lang: string): string`
 
-The `string` method takes in two required paramaters that are both strings. The first string is to be the string that you wish to minify, and the second being the mime type of the string that you wish to minify. The method will then return the value of the given string parameter minified. Here are the mime types that are currently supported with the `string` method:
+The `string` method takes in two required paramaters that are both strings. The first string is to be the string that you wish to minify, and the second being the language extension of the string that you wish to minify. The method will then return the value of the given string parameter minified. Here are the mime types that are currently supported with the `string` method:
 
-#### `.file(filepath: string, mimeType: string): Promise<void>`
+#### `.file(filepath: string, lang: string): Promise<void>`
 
-The asynchronous `file` method also takes in two required string parameters with the first being the path to the file and the second being the mime type of the file. The method will then minify that file using the minification method set for the given mime type. Here are the mime types that are currently supported with the `file` method:
+The asynchronous `file` method also takes in two string parameters with the first being the path to the file and the second being optional and the language extension of the file. The method will then minify that file using the extension found on the file.
+
+Check out all of the supported languages [here](#supported-language-types).
 
 ## CLI
 
