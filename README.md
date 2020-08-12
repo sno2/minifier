@@ -19,7 +19,7 @@ html {
 }
 `
 
-minifier.fromString(test, "text/css")
+minifier.string(testCSS, "text/css")
 ```
 
 ## Installation
