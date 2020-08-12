@@ -14,7 +14,7 @@ export const minifiers: { [key: string]: any } = {
       .replace(/\s*\;\}\s*/g, "}"),
 
   "text/html": (html: string): string =>
-    html.replace(/\s\s+/g, "").trim().replace(/\n/g, ""),
+    html.replace(/\s\s+/g, "").replace(/\n/g, "").trim(),
 
   // TODO: Better regex to remove whitespace for arrays and objects
   "application/json": (json: string): string =>
