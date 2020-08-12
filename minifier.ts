@@ -4,7 +4,7 @@ export class Minifier {
   encoder = new TextEncoder()
   decoder = new TextDecoder("utf-8")
 
-  fromString = (str: string, mimeType: string): string => {
+  string = (str: string, mimeType: string): string => {
     switch (mimeType) {
       case "text/css":
         return minificationMethods.css(str)
@@ -17,7 +17,7 @@ export class Minifier {
     }
   }
 
-  fromFile = async (filepath: string, mimeType: string) => {
+  file = async (filepath: string, mimeType: string) => {
     const file = this.decoder.decode(await Deno.readFile(filepath))
 
     switch (mimeType) {
