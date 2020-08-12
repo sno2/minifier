@@ -22,7 +22,7 @@ html {
 minifier.string(testCSS, "text/css")
 ```
 
-## Installation
+## Module Installation
 
 This is a [Deno](https://deno.land/) module available to import direct from this repo and via the [Deno Third Party Modules index](https://deno.land/x/minifier).
 
@@ -33,6 +33,24 @@ You can then import Minifier straight into your project:
 ```ts
 import { Minifier } from "https://deno.land/x/minifier/mod.ts"
 ```
+
+## CLI
+
+If you would like to install the CLI version of Minifier, just clone or download this repository and run the following command inside of your terminal:
+
+```shell
+deno install --unstable --allow-read --allow-write --name minifier cli.ts
+```
+
+Here are all of the commands that you can run and a short description:
+
+- minifier Displays data on all Minifier CLI methods.
+
+- minifier <file-path> Minifies file from given file path.
+
+- minifier . Minifies all files in current directory.
+
+- minifier .. Minifies all files in current directory and subdirectories.
 
 ## Docs
 
@@ -56,4 +74,6 @@ The asynchronous `file` method also takes in two required string parameters with
 
 ## Dependencies
 
-- None!
+- [Deno Flags Module (CLI Only - Parsing Command-Line Arguments)](https://deno.land/std@0.64.0/flags)
+
+- [Printf for Deno Module (CLI Only - Terminal Colors)](https://deno.land/std@0.64.0/fmt)
