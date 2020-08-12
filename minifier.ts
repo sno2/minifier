@@ -4,6 +4,7 @@ export class Minifier {
   encoder = new TextEncoder()
   decoder = new TextDecoder("utf-8")
 
+  // TODO: Better naming conventions for class methods (BREAKING CHANGE)
   string = (str: string, mimeType: string): string => {
     switch (mimeType) {
       case "text/css":
