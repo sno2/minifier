@@ -7,7 +7,7 @@ A simple [Deno](https://deno.land) Module to minify files and strings.
 Here is an example usage of the Minifier module:
 
 ```ts
-import { Minifier } from "https://raw.githubusercontent.com/CodingCarter/minifier/master/mod.ts"
+import { Minifier } from "https://deno.land/x/minifier/mod.ts"
 
 const minifier = new Minifier()
 
