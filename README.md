@@ -24,14 +24,14 @@ minifier.string(testCSS, "text/css")
 
 ## Installation
 
-This is a [Deno](https://deno.land/) module available to import direct from this repo and via the [Github mod.ts File](https://raw.githubusercontent.com/CodingCarter/minifier/master/mod.ts). We haven't added the module to the Deno Registry because we hope to wait until we reach a stable build.
+This is a [Deno](https://deno.land/) module available to import direct from this repo and via the [Deno Third Party Modules index](https://deno.land/x/minifier).
 
 Before importing, [download and install Deno](https://deno.land/#installation).
 
 You can then import Minifier straight into your project:
 
 ```ts
-import { Minifier } from "https://raw.githubusercontent.com/CodingCarter/minifier/master/mod.ts"
+import { Minifier } from "https://deno.land/x/minifier/mod.ts"
 ```
 
 ## Docs
@@ -48,9 +48,9 @@ The asynchronous `file` method also takes in two required string parameters with
 
 ### Supported Mime Types
 
-- `text/css`
-
 - `text/html`
+
+- `text/css`
 
 - `application/json`
 
