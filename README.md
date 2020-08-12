@@ -44,13 +44,12 @@ deno install --unstable --allow-read --allow-write --name minifier cli.ts
 
 Here are all of the commands that you can run and a short description:
 
-- `minifier` Displays data on all Minifier CLI methods.
-
-- `minifier <file-path>` Minifies file from given file path.
-
-- `minifier .` Minifies all files in current directory.
-
-- `minifier ..` Minifies all files in current directory and subdirectories.
+| Command                | Description                                                 |
+| ---------------------- | ----------------------------------------------------------- |
+| `minifier`             | Displays data on all Minifier CLI methods.                  |
+| `minifier <file-path>` | Minifies file from given file path.                         |
+| `minifier .`           | Minifies all files in current directory.                    |
+| `minifier ..`          | Minifies all files in current directory and subdirectories. |
 
 ## Docs
 
