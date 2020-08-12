@@ -17,7 +17,7 @@ export class Minifier {
     }
   }
 
-  file = async (filepath: string, mimeType: string) => {
+  file = async (filepath: string, mimeType: string): Promise<void> => {
     const file = this.decoder.decode(await Deno.readFile(filepath))
 
     switch (mimeType) {
