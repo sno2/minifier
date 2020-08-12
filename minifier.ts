@@ -1,9 +1,9 @@
 import { minifiers } from "./minifiers.ts"
 
-// TODO: Better naming conventions for class methods (BREAKING CHANGE)
+// TODO: Better naming conventions for class methods (BREAKING CHANGE).
 
 /**
- * The class that is used to minify strings and files based on given mime types
+ * The class that is used to minify strings and files based on given mime types.
  * Requires the `--unstable` flag.
  */
 export class Minifier {
@@ -19,7 +19,7 @@ export class Minifier {
     Object.prototype.hasOwnProperty.call(minifiers, mimeType)
 
   /**
-   * Minifies a string based upon a given mime type.
+   * Minifies and returns a string based upon a given mime type.
    * @param str The string that is the text that will be minified.
    * @param mimeType The string that is the Mime Type that is being checked to see if it is currently supported.
    */
@@ -35,7 +35,7 @@ export class Minifier {
 
   /**
    * Writes a given file with a minified version of the original contents using a given mime type.
-   * Requires the `--allow-read` and `--allow-write` flag.
+   * Requires the `--allow-read` and `--allow-write` flags.
    * @param filepath The string that is the filepath of the file that will be minified.
    * @param mimeType The string that is the Mime Type that is being checked to see if it is currently supported.
    * @async
