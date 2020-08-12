@@ -83,7 +83,7 @@ The console will then read:
 ✅ Minified index.html
 ```
 
-### Supported Mime Types
+## Supported Mime Types
 
 - `text/html`
 
