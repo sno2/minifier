@@ -50,7 +50,7 @@ The asynchronous `file` method also takes in two required string parameters with
 
 The Minifier CLI is still in development, therefore there may be syntax changes and better error support later.
 
-#### Installation
+### Installation
 
 If you would like to install the CLI version of Minifier, just clone or download this repository and run the following command inside of your terminal:
 
@@ -58,7 +58,7 @@ If you would like to install the CLI version of Minifier, just clone or download
 deno install --unstable --allow-read --allow-write --name minifier cli.ts
 ```
 
-#### Commands
+### Commands
 
 Here are all of the commands that you can run and a short description:
 
@@ -69,7 +69,7 @@ Here are all of the commands that you can run and a short description:
 |           `minifier .` | Minifies all files in current directory.                    |
 |          `minifier ..` | Minifies all files in current directory and subdirectories. |
 
-#### Example Usage
+### Example Usage
 
 In the following command, we will be minifying the index.html that is found within the current directory.
 
