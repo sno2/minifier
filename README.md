@@ -36,20 +36,26 @@ import { Minifier } from "https://deno.land/x/minifier/mod.ts"
 
 ## CLI
 
+The Minifier CLI is still in development, therefore there may be syntax changes and better error support later.
+
+### Installation
+
 If you would like to install the CLI version of Minifier, just clone or download this repository and run the following command inside of your terminal:
 
 ```shell
 deno install --unstable --allow-read --allow-write --name minifier cli.ts
 ```
 
+### Commands
+
 Here are all of the commands that you can run and a short description:
 
-| Command                | Description                                                 |
-| ---------------------- | ----------------------------------------------------------- |
-| `minifier`             | Displays data on all Minifier CLI methods.                  |
+|                Command | Description                                                 |
+| ---------------------: | :---------------------------------------------------------- |
+|             `minifier` | Displays data on all Minifier CLI methods.                  |
 | `minifier <file-path>` | Minifies file from given file path.                         |
-| `minifier .`           | Minifies all files in current directory.                    |
-| `minifier ..`          | Minifies all files in current directory and subdirectories. |
+|           `minifier .` | Minifies all files in current directory.                    |
+|          `minifier ..` | Minifies all files in current directory and subdirectories. |
 
 ## Docs
 
