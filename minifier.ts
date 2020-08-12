@@ -49,6 +49,6 @@ export class Minifier {
 
     const minifier = minifiers[mimeType]
 
-    Deno.writeFile(filepath, this.encoder.encode(minifier(file)))
+    await Deno.writeFile(filepath, this.encoder.encode(minifier(file)))
   }
 }
