@@ -19,7 +19,7 @@ html {
 }
 `
 
-minifier.string(testCSS, "text/css")
+minifier.string(testCSS, "css")
 ```
 
 ## Module Installation
@@ -83,13 +83,13 @@ The console will then read:
 ✅ Minified index.html
 ```
 
-## Supported Mime Types
+## Supported Language Types
 
-- `text/html`
+- html
 
-- `text/css`
+- css
 
-- `application/json`
+- json
 
 ## Dependencies
 
