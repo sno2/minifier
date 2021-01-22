@@ -1,0 +1,22 @@
+[package]
+name = "minifier"
+version = "0.1.0"
+authors = ["Carter Snook"]
+edition = "2018"
+
+[lib]
+name = "minifier_lib"
+path = "src/lib.rs"
+crate-type =["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2.68"
+minify = "1.2"
+minify-html = "0.4.1"
+
+[profile.release]
+lto = true
+opt-level = 3
+
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = ["-O", "--enable-mutable-globals"]
