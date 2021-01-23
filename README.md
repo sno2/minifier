@@ -2,6 +2,16 @@
 
 An awesome language minifier for Deno that is powered by WebAssembly!
 
+## Usage
+
+To start using minifier with Deno, just add an import to the top of your file and get all of the features that you want to use from there! Here is an example import:
+
+```ts
+import { Language, minify } from "https://deno.land/x/minifier/mod.ts";
+```
+
+> For simpliciy, we will not be including the import statements in our code examples. Therefore, it is implicit that you can import what you need by adjusting the code above.
+
 ## Docs
 
 ### Language Object
