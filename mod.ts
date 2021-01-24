@@ -44,7 +44,6 @@ export function minifyHTML(code: string, options?: Partial<MinifyHTMLOptions>) {
     minifyJS: false,
     ...options,
   };
-  console.log(minifyCSS, minifyJS);
 
   return minifyHTMLRaw(code, minifyCSS, minifyJS);
 }
