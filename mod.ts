@@ -37,6 +37,7 @@ export interface MinifyHTMLOptions {
  * Minifies the given html code with the options that specify if you want to minify CSS and/or JS.
  * @param code the html code string to minify
  * @param options the options that tell if you want to minify CSS and/or JS in the HTML
+ * @returns the minified html code
  */
 export function minifyHTML(code: string, options?: Partial<MinifyHTMLOptions>) {
   const { minifyCSS, minifyJS }: MinifyHTMLOptions = {
