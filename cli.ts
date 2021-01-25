@@ -47,4 +47,6 @@ if (fileName !== undefined) {
       )})`
     )
   );
+} else {
+  console.log("minifier v1.1.0");
 }
