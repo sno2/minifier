@@ -100,11 +100,12 @@ To install the CLI for minifier, run the following command: `deno install --allo
 
 ### Commands
 
-| Command            | Action                                              |
-| ------------------ | --------------------------------------------------- |
-| `<file-location> ` | minifies the given file from the location specified |
-| `-H`, `--help`     | provides info on all of the commands available      |
-| `-V`, `--version`  | gives the version info for the CLI                  |
+| Command                             | Action                                                                         |
+| ----------------------------------- | ------------------------------------------------------------------------------ |
+| `<file-location> `                  | minifies the given file from the location specified                            |
+| `<file-location> <output-location>` | minifies the given file from the file location and saves it as the output file |
+| `-H`, `--help`                      | provides info on all of the commands available                                 |
+| `-V`, `--version`                   | gives the version info for the CLI                                             |
 
 ## Building
 
