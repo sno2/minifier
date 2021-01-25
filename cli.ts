@@ -15,7 +15,8 @@ function msg(emoji: string, message: string) {
 
 if (fileName !== undefined) {
   if (rest.length > 0) {
-    throw Error("Too many arguments passed in.");
+    console.error(msg("❌", "Too many arguments passed in."));
+    Deno.exit(0);
   }
 
   const fileContents = await Deno.readTextFile(fileName).catch((err) => {
