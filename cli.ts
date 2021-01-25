@@ -4,6 +4,7 @@ import {
   bold,
   red,
   blue,
+  gray,
 } from "https://deno.land/std@0.84.0/fmt/colors.ts";
 
 const { args } = Deno;
@@ -52,8 +53,8 @@ await Deno.writeTextFile(
 console.log(
   msg(
     "✅",
-    `Successfully minified ${bold(green(fileName))}! (${blue(
-      `${performance.now().toFixed(0)}ms`
-    )})`
+    `Successfully minified ${bold(green(fileName))}! ${gray(
+      `(${performance.now().toFixed(0)}ms)`
+    )}`
   )
 );
