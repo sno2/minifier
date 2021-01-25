@@ -12,7 +12,9 @@ switch (args[0]) {
   case "--help":
   case "-H":
     console.log(
-      "  <file-location> minifies the given file from the file location"
+      `  <file-location>  minifies the given file from the file location
+  -H, --help  provides info on all of the commands available
+  -V, --version  gives the version info for the CLI`
     );
     Deno.exit(1);
     break;
