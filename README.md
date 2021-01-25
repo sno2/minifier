@@ -88,6 +88,24 @@ The following languages are supported for minification. You can either pass in t
 
 - JSON ("json")
 
+## CLI
+
+Minifier even has its own CLI that allows you quickly minify files in your terminal.
+
+### Installation
+
+To install the CLI for minifier, run the following command: `deno install --allow-read --allow-write --allow-hrtime -n minifier https://deno.land/x/minifier/cli.ts`.
+
+> We strongly suggest including the `--allow-hrtime` flag as it allows the performance benchmarks to be more accurate.
+
+### Commands
+
+| Command            | Action                                              |
+| ------------------ | --------------------------------------------------- |
+| `<file-location> ` | minifies the given file from the location specified |
+| `-H`, `--help`     | provides info on all of the commands available      |
+| `-V`, `--version`  | gives the version info for the CLI                  |
+
 ## Building
 
 To build the project, make sure that you have the Go compiler and Cargo installed. After that, you can just run the `deno run -A build.ts` to generate the corresponding files.
