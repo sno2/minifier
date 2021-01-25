@@ -7,6 +7,14 @@ import {
 } from "https://deno.land/std@0.84.0/fmt/colors.ts";
 
 const { args } = Deno;
+
+if (args[0] === "--help") {
+  console.log(
+    "  <file-location> minifies the given file from the file location"
+  );
+  Deno.exit(1);
+}
+
 const [fileName, ...rest] = args;
 
 function msg(emoji: string, message: string) {
