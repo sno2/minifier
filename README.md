@@ -46,6 +46,8 @@ minify("css", code);
 
 ### Minifying HTML
 
+**Note**: This feature is under development.
+
 As us HTML programmers know, you can include CSS and JS inside of your HTML code. If you want to minify the CSS/JS in your HTML, the just use the `minifyHTML` function! You just pass in the code first and the options for whether you want to minify CSS and/or JS second. Here is an example:
 
 ```ts
