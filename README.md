@@ -10,7 +10,7 @@ To start using minifier with Deno, just add an import to the top of your file an
 import { Language, minify } from "https://deno.land/x/minifier/mod.ts";
 ```
 
-> For simpliciy, we will not be including the import statements in our code examples. Therefore, it is implicit that you can import what you need by adjusting the code above.
+> For simplicity, we will not be including the import statements in our code examples. Therefore, it is implicit that you can import what you need by adjusting the code above.
 
 ## Docs
 
@@ -83,11 +83,8 @@ minifyHTML(code, {
 The following languages are supported for minification. You can either pass in the `Language` object variant into our various functions to specify your language or the actual string in parentheses to pick your language.
 
 - HTML ("html")
-
 - CSS ("css")
-
 - JS ("js")
-
 - JSON ("json")
 
 ## CLI
@@ -96,7 +93,11 @@ Minifier even has its own CLI that allows you quickly minify files in your termi
 
 ### Installation
 
-To install the CLI for minifier, run the following command: `deno install --allow-read --allow-write --allow-hrtime -n minifier https://deno.land/x/minifier/cli.ts`.
+To install the CLI for minifier, run the following command:
+
+```sh
+deno install --allow-read --allow-write --allow-hrtime https://deno.land/x/minifier/cli.ts
+```
 
 > We strongly suggest including the `--allow-hrtime` flag as it allows the performance benchmarks to be more accurate.
 
