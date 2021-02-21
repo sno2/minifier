@@ -96,8 +96,7 @@ Minifier even has its own CLI that allows you quickly minify files in your termi
 To install the CLI for minifier, run the following command:
 
 ```sh
-deno install --allow-read --allow-write --allow-hrtime \
-  -n minifier https://deno.land/x/minifier/cli.ts
+deno install --allow-read --allow-write --allow-hrtime https://deno.land/x/minifier/cli.ts
 ```
 
 > We strongly suggest including the `--allow-hrtime` flag as it allows the performance benchmarks to be more accurate.
